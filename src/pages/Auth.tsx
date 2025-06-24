@@ -140,40 +140,17 @@ const Auth: React.FC = () => {
         >
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="flex items-center justify-center space-x-3 mb-4">
+            <div className="flex items-center justify-center space-x-3">
               {/* Logo Icon */}
-              <div className="relative">
-                <svg 
-                  width="32" 
-                  height="32" 
-                  viewBox="0 0 100 100" 
-                  className="text-primary-600"
-                >
-                  <defs>
-                    <linearGradient id="potGradientAuth" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#F59E0B" />
-                      <stop offset="100%" stopColor="#D97706" />
-                    </linearGradient>
-                  </defs>
-                  
-                  <path 
-                    d="M25 45 Q25 35 35 35 L65 35 Q75 35 75 45 L75 70 Q75 80 65 80 L35 80 Q25 80 25 70 Z" 
-                    fill="url(#potGradientAuth)" 
-                    stroke="currentColor" 
-                    strokeWidth="1.5"
-                  />
-                  <ellipse cx="50" cy="35" rx="25" ry="4" fill="#FCD34D" stroke="currentColor" strokeWidth="1"/>
-                  <circle cx="45" cy="50" r="2" fill="#DC2626" opacity="0.9"/>
-                  <circle cx="55" cy="55" r="1.5" fill="#DC2626" opacity="0.7"/>
-                  <path d="M20 50 Q15 50 15 45 Q15 40 20 40" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M80 50 Q85 50 85 45 Q85 40 80 40" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-logo text-xl font-bold text-primary-600 tracking-wide">
-                  SOUTHSPICE
-                </span>
-              </div>
+              <div className="relative transform group-hover:scale-105 transition-transform duration-300">
+              <img
+                src="/southspice-2.png"
+                alt="SouthSpice Logo"
+                width={180}
+                height={180}
+                className="drop-shadow-sm"
+              />
+            </div>
             </div>
             <h2 className="text-xl font-heading font-semibold text-warm-900 mb-2">
               {isLogin ? 'Welcome Back!' : 'Join SouthSpice'}
